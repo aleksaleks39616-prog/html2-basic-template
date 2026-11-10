@@ -219,8 +219,8 @@
         </label>
         <select class="cards__sorting-select" id="cards-sort" name="sort">
           <option value="default">по умолчанию</option>
-          <option value="price-asc">сначала дешёвые</option>
-          <option value="price-desc">сначала дорогие</option>
+          <option value="price-cheap">сначала дешёвые</option>
+          <option value="price-expensive">сначала дорогие</option>
         </select>
       </div>
       <ul class="cards__list">
@@ -248,18 +248,64 @@
               <span class="cards__price">225 ₽</span>
               <button class="button button--primary cards__button" type="button"
                 aria-label="Добавить Декаф Флэт Уайт в корзину">
-                <svg width="20" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
-                  aria-hidden="true" focusable="false">
-                  <path d="M2 3h3l3 13h11l3-9H6M13 1v8m-4-4h8" />
-                  <circle cx="9" cy="21" r="1" />
-                  <circle cx="18" cy="21" r="1" />
-                </svg>
+                <button class="button button--primary cards__button" type="button"
+                  aria-label="Добавить Декаф Флэт Уайт в корзину">
+                  <svg class="cards__button-icon" width="20" height="16" aria-hidden="true" focusable="false">
+                    <!-- Сюда добавишь содержимое SVG из макета -->
+                  </svg>
+
+                  В корзину
+                </button>
                 В корзину
               </button>
             </div>
         </li>
       </ul>
+
+      <ul class="pagination">
+        <li class="pagination__item">
+          <button class="pagination__button pagination__button--left" type="button">
+            <span class="visually-hidden">Предыдущая страница</span>
+          </button>
+        </li>
+
+        <li class="pagination__item">
+          <a class="pagination__item-link pagination__item-link--current" href="#" aria-current="page">
+            1
+          </a>
+        </li>
+
+        <li class="pagination__item">
+          <a class="pagination__item-link" href="#">2</a>
+        </li>
+
+        <li class="pagination__item">
+          <a class="pagination__item-link" href="#">3</a>
+        </li>
+
+        <li class="pagination__item">
+          <button class="pagination__button pagination__button--right" type="button">
+            <span class="visually-hidden">Следующая страница</span>
+          </button>
+        </li>
+      </ul>
     </section>
+    <div class="map">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="
+        images/map-desktop@1x.png,
+        images/map-desktop@2x.png 2x
+      ">
+
+        <source media="(min-width: 768px)" srcset="
+        images/map-tablet@1x.png,
+        images/map-tablet@2x.png 2x
+      ">
+
+        <img class="map__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x"
+          alt="Расположение магазина Drink2Go на карте">
+      </picture>
+    </div>
   </main>
 </body>
 
