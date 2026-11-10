@@ -211,84 +211,79 @@
         </form>
       </div>
     </section>
-    <section class="cards container">
-      <h3 class="visually-hidden">Список карточек товаров</h3>
-      <div class="cards__sorting">
-        <label class="cards__sorting-text" for="cards-sort">
-          Сортировка:
-        </label>
-        <select class="cards__sorting-select" id="cards-sort" name="sort">
-          <option value="default">по умолчанию</option>
-          <option value="price-cheap">сначала дешёвые</option>
-          <option value="price-expensive">сначала дорогие</option>
-        </select>
-      </div>
-      <ul class="cards__list">
-        <li class="cards__item">
-          <a class="cards__link" href="#">
-            <picture>
-              <source type="image/png" media="(min-width:1440px)"
-                srcset="images/catalog-1-desktop@1x.png, images/catalog-1-desktop@2x.png 2x" width="161" height="172">
-              <source type="image/png" media="(min-width:768px)"
-                srcset="images/catalog-1-tablet@1x.png, images/catalog-1-tablet@2x.png 2x" width="161" height="172">
-              <img class="catalog-product__link-img" src="images/catalog-1-mobile@1x.png"
-                srcset="images/catalog-1-mobile@2x.png 2x" width="68" height="86" alt="Кофе">
-            </picture>
-          </a>
-          <div class="cards__info">
-            <h3 class="cards__item-title">Декаф Флэт Уайт
-              <a class="cards__link-name" href="#"> </a>
-            </h3>
-
-            <div class="catalog-product__description">
+    <section class="cards">
+      <div class="container">
+        <div class="cards__sorting">
+          <label class="cards__sorting-text" for="cards-sort">
+            Сортировка:
+          </label>
+          <select class="cards__sorting-select" id="cards-sort" name="sort">
+            <option value="default">по умолчанию</option>
+            <option value="price-cheap">сначала дешёвые</option>
+            <option value="price-expensive">сначала дорогие</option>
+          </select>
+        </div>
+        <ul class="cards__list">
+          <li class="cards__item">
+            <a class="cards__link" href="#">
+              <picture>
+                <source type="image/png" media="(min-width:1440px)"
+                  srcset="images/catalog-1-desktop@1x.png, images/catalog-1-desktop@2x.png 2x" width="161" height="172">
+                <source type="image/png" media="(min-width:768px)"
+                  srcset="images/catalog-1-tablet@1x.png, images/catalog-1-tablet@2x.png 2x" width="161" height="172">
+                <img class="cards__link-img" src="images/catalog-1-mobile@1x.png"
+                  srcset="images/catalog-1-mobile@2x.png 2x" width="68" height="86" alt="Кофе">
+              </picture>
+            </a>
+            <div class="cards__info">
+              <h3 class="cards__item-title">Декаф Флэт Уайт
+                <a class="cards__item-link" href="#"></a>
+              </h3>
+            </div>
+            <div class="cards__description">
               <p class="cards__item-text">Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
             </div>
             <div class="cards__bottom">
               <span class="cards__price">225 ₽</span>
               <button class="button button--primary cards__button" type="button"
-                aria-label="Добавить Декаф Флэт Уайт в корзину">
-                <button class="button button--primary cards__button" type="button"
-                  aria-label="Добавить Декаф Флэт Уайт в корзину">
-                  <svg class="cards__button-icon" width="20" height="16" aria-hidden="true" focusable="false">
-                    <!-- Сюда добавишь содержимое SVG из макета -->
-                  </svg>
-
-                  В корзину
-                </button>
-                В корзину
-              </button>
+                aria-label="Добавить Декаф Флэт Уайт в корзину">В корзину</button>
+              <svg class="cards__button-icon" width="20" height="16" aria-hidden="true" focusable="false">
+                <!-- Сюда добавишь содержимое SVG из макета -->
+              </svg>
             </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+        <nav class="pagination" aria-label="Страницы каталога">
+          <ul class="pagination__list">
+            <li class="pagination__item">
+              <button class="pagination__button pagination__button--left" type="button">
+                <span class="visually-hidden">Предыдущая страница</span>
+              </button>
+            </li>
 
-      <ul class="pagination">
-        <li class="pagination__item">
-          <button class="pagination__button pagination__button--left" type="button">
-            <span class="visually-hidden">Предыдущая страница</span>
-          </button>
-        </li>
+            <li class="pagination__item">
+              <a class="pagination__item-link pagination__item-link--current" href="#" aria-current="page">
+                1
+              </a>
+            </li>
 
-        <li class="pagination__item">
-          <a class="pagination__item-link pagination__item-link--current" href="#" aria-current="page">
-            1
-          </a>
-        </li>
+            <li class="pagination__item">
+              <a class="pagination__item-link" href="#">2</a>
+            </li>
 
-        <li class="pagination__item">
-          <a class="pagination__item-link" href="#">2</a>
-        </li>
+            <li class="pagination__item">
+              <a class="pagination__item-link" href="#">3</a>
+            </li>
 
-        <li class="pagination__item">
-          <a class="pagination__item-link" href="#">3</a>
-        </li>
-
-        <li class="pagination__item">
-          <button class="pagination__button pagination__button--right" type="button">
-            <span class="visually-hidden">Следующая страница</span>
-          </button>
-        </li>
-      </ul>
+            <li class="pagination__item">
+              <button class="pagination__button pagination__button--right" type="button">
+                <span class="visually-hidden">Следующая страница</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </section>
     <div class="map">
       <picture>
@@ -307,6 +302,74 @@
       </picture>
     </div>
   </main>
+  <footer class="footer container">
+    <div class="footer-wrapper">
+      <a class="footer__logo" href="#">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="
+        images/map-desktop@1x.png,
+        images/map-desktop@2x.png 2x
+      ">
+
+          <source media="(min-width: 768px)" srcset="
+        images/map-tablet@1x.png,
+        images/map-tablet@2x.png 2x
+      ">
+          <img class="footer__logo-img" src="#" srcset="#" alt="Drink2Go">
+        </picture>
+      </a>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--pinterest" href="#">
+              <span class="visually-hidden">Пинтерест</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--ok" href="#">
+              <span class="visually-hidden">Одноклассники</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__nav">
+        <h3 class="footer__title">Интернет-магазин</h3>
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="#">Каталог</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Доставка</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Способы оплаты</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">О нас</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__nav">
+        <h3 class="footer__title">Медиа</h3>
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="#">Блог</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Информация для СМИ</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Правовая информация</a></li>
+
+
+        </ul>
+      </div>
+
+      <div class="footer__contacts">
+        <h3 class="footer__title">Контакты</h3>
+        <address class="footer__address">Санкт-Петербург, набережная реки Карповки, дом 5</address>
+        <a class="footer__phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
+      </div>
+
+      <div class="footer__credits">
+        <a class="footer__credits-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано HTML Academy</a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
