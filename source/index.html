@@ -78,33 +78,188 @@
     </section>
     <section class="advantages">
       <div class="container">
-      <p class="advantages__label">Преимущества</p>
-      <h2 class="advantages__title">Главные причины выбрать Drink2Go</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <h3 class="advantages__item-title">Скорость</h3>
-          <p class="advantages__item-text"> Готовый напиток всегда под рукой — просто открой банку</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__item-title">Удобство</h3>
-          <p class="advantages__item-text">Легко помещается и в карман, и в маленькую сумочку</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__item-title">Бодрость</h3>
-          <p class="advantages__item-text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__item-title">Экологичность</h3>
-          <p class="advantages__item-text">Вся упаковка сделана из перерабатываемых материалов</p>
-        </li>
+        <p class="advantages__label">Преимущества</p>
+        <h2 class="advantages__title">Главные причины выбрать Drink2Go</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">Скорость</h3>
+            <p class="advantages__item-text">Готовый напиток всегда под рукой — просто открой банку</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">Удобство</h3>
+            <p class="advantages__item-text">Легко помещается и в карман, и в маленькую сумочку</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">Бодрость</h3>
+            <p class="advantages__item-text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">Экологичность</h3>
+            <p class="advantages__item-text">Вся упаковка сделана из перерабатываемых материалов</p>
+          </li>
         </ul>
-        </div>
-        </section>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="container">
+        <p class="catalog__label">Каталог</p>
+        <h2 class="catalog__title">Каталог кофейных напитков</h2>
+        <form class="filters" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filters__group">
+            <legend class="filters__legend">Цена</legend>
+            <div class="range">
+              <div class="range__track" aria-hidden="true"></div>
+              <input class="range__input range__input--min" type="range" min="0" max="900" step="1" value="0"
+                aria-label="Минимальная цена">
+              <input class="range__input range__input--max" type="range" min="0" max="900" step="1" value="900"
+                aria-label="Максимальная цена">
+            </div>
 
+            <div class="filters__price">
+              <label class="filters__field">
+                <span class="visually-hidden">Минимальная цена</span>
+                <input class="filters__input" type="number" name="price-min" min="0" max="900" step="1" value="0">
+              </label>
+              <span class="filters__dash">-</span>
+              <label class="filters__field">
+                <span class="visually-hidden">Максимальная цена</span>
+                <input class="filters__input" type="number" name="price-max" min="0" max="900" step="1" value="900">
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="filters__group">
+            <legend class="filters__legend">Наличие молока</legend>
+            <ul class="filters__list">
+              <li class="filters__item">
+                <label class="filters__option">
+                  <input class="filters__control" type="radio" name="milk" value="Неважно" checked>
+                  <span class="filters__option-text">Неважно</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__option">
+                  <input class="filters__control" type="radio" name="milk" value="Только животное">
+                  <span class="filters__option-text">Только животное</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__option">
+                  <input class="filters__control" type="radio" name="milk" value="Только растительное">
+                  <span class="filters__option-text">Только растительное</span>
+                </label>
+              </li>
+              <li class="filters__item">
+                <label class="filters__option">
+                  <input class="filters__control" type="radio" name="milk" value="Без молока">
+                  <span class="filters__option-text">Без молока</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters__group">
+            <legend class="filters__legend">Страны произрастания</legend>
 
+            <ul class="filters__list">
+              <li class="filters__item">
+                <label class="filters__option">
+                  <input class="filters__control filters__control--switch" type="checkbox" name="country" value="brazil"
+                    checked>
+                  <span class="filters__option-text">Бразилия</span>
+                </label>
+              </li>
 
+              <li class="filters__item">
+                <label class="filters__option">
+                  <input class="filters__control filters__control--switch" type="checkbox" name="country"
+                    value="ethiopia">
+                  <span class="filters__option-text">Эфиопия</span>
+                </label>
+              </li>
 
+              <li class="filters__item">
+                <label class="filters__option">
+                  <input class="filters__control filters__control--switch" type="checkbox" name="country"
+                    value="colombia">
+                  <span class="filters__option-text">Колумбия</span>
+                </label>
+              </li>
 
+              <li class="filters__item">
+                <label class="filters__option">
+                  <input class="filters__control filters__control--switch" type="checkbox" name="country"
+                    value="costa-rica">
+                  <span class="filters__option-text">Коста-Рика</span>
+                </label>
+              </li>
+
+              <li class="filters__item">
+                <label class="filters__option">
+                  <input class="filters__control filters__control--switch" type="checkbox" name="country" value="peru">
+                  <span class="filters__option-text">Перу</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="filters__buttons">
+            <button class="button button--primary filters__submit" type="submit">
+              Применить
+            </button>
+            <button class="button button--secondary filters__reset" type="reset">
+              Сбросить
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="cards container">
+      <h3 class="visually-hidden">Список карточек товаров</h3>
+      <div class="cards__sorting">
+        <label class="cards__sorting-text" for="cards-sort">
+          Сортировка:
+        </label>
+        <select class="cards__sorting-select" id="cards-sort" name="sort">
+          <option value="default">по умолчанию</option>
+          <option value="price-asc">сначала дешёвые</option>
+          <option value="price-desc">сначала дорогие</option>
+        </select>
+      </div>
+      <ul class="cards__list">
+        <li class="cards__item">
+          <a class="cards__link" href="#">
+            <picture>
+              <source type="image/png" media="(min-width:1440px)"
+                srcset="images/catalog-1-desktop@1x.png, images/catalog-1-desktop@2x.png 2x" width="161" height="172">
+              <source type="image/png" media="(min-width:768px)"
+                srcset="images/catalog-1-tablet@1x.png, images/catalog-1-tablet@2x.png 2x" width="161" height="172">
+              <img class="catalog-product__link-img" src="images/catalog-1-mobile@1x.png"
+                srcset="images/catalog-1-mobile@2x.png 2x" width="68" height="86" alt="Кофе">
+            </picture>
+          </a>
+          <div class="cards__info">
+            <h3 class="cards__item-title">Декаф Флэт Уайт
+              <a class="cards__link-name" href="#"> </a>
+            </h3>
+
+            <div class="catalog-product__description">
+              <p class="cards__item-text">Кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком</p>
+            </div>
+            <div class="cards__bottom">
+              <span class="cards__price">225 ₽</span>
+              <button class="button button--primary cards__button" type="button"
+                aria-label="Добавить Декаф Флэт Уайт в корзину">
+                <svg width="20" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                  aria-hidden="true" focusable="false">
+                  <path d="M2 3h3l3 13h11l3-9H6M13 1v8m-4-4h8" />
+                  <circle cx="9" cy="21" r="1" />
+                  <circle cx="18" cy="21" r="1" />
+                </svg>
+                В корзину
+              </button>
+            </div>
+        </li>
+      </ul>
+    </section>
   </main>
 </body>
 
