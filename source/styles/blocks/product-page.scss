@@ -4,7 +4,50 @@
   font-size: 12px;
   line-height: 16px;
   text-transform: uppercase;
-  color:  #7859CF;
+  color: #7859CF;
   text-align: center;
+
+}
+
+.product-page__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #333;
+  text-align: center;
+
+}
+
+.product-page__description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  text-align: center;
+  width: 280px;
+  min-height: 100px;
+
+}
+
+.product-page__price-old {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #7859CF;
+}
+
+.product-page__price-new {
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  color: #333;
+
 
 }
