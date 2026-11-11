@@ -15,12 +15,13 @@
     <div class="container main-header__container">
       <a class="main-header__logo logo" href="#">
         <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-          <img class="logo__image" src="#" width="88" height="32" alt="Drink2Go">
+          <source type="image/svg+xml" media="(min-width:1440px)" width="170" height="36"
+            srcset="images/logo-desktop.svg">
+          <source type="image/svg+xml" media="(min-width: 768px)" width="82" height="36"
+            srcset="images/logo-tablet.svg">
+          <img class="logo__image" src="#" width="100" height="100" alt="Drink2Go">
         </picture>
       </a>
-
       <div class="main-header__actions">
         <a class="main-header__action icon-button icon-button--user" href="#">
           <span class="visually-hidden">Войти в личный кабинет</span></a>
@@ -56,7 +57,14 @@
           <button class="product-page__arrow product-page__arrow--prev" type="button">
             <span class="visually-hidden">Предыдущий слайд</span>
           </button>
-          <img class="product-page__image" src="#" width="260" height="260" alt="Банка кофе «Декаф Флэт Уайт»">
+          <picture class="product-view__image">
+            <source type="image/png" media="(min-width:1440px)" width="600" height="600"
+              srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x">
+            <source type="image/png" media="(min-width: 768px)" width="476" height="476"
+              srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x">
+            <img class="product-page__image" src="images/hero-image-mobile@2x.png" width="280" height="280"
+              alt="Банка кофе «Декаф Флэт Уайт»">
+          </picture>
           <button class="product-page__arrow product-page__arrow--next" type="button">
             <span class="visually-hidden">Следующий слайд</span>
           </button>
@@ -114,7 +122,6 @@
               <input class="range__input range__input--max" type="range" min="0" max="900" step="1" value="900"
                 aria-label="Максимальная цена">
             </div>
-
             <div class="filters__price">
               <label class="filters__field">
                 <span class="visually-hidden">Минимальная цена</span>
@@ -183,7 +190,6 @@
                   <span class="filters__option-text">Колумбия</span>
                 </label>
               </li>
-
               <li class="filters__item">
                 <label class="filters__option">
                   <input class="filters__control filters__control--switch" type="checkbox" name="country"
@@ -191,7 +197,6 @@
                   <span class="filters__option-text">Коста-Рика</span>
                 </label>
               </li>
-
               <li class="filters__item">
                 <label class="filters__option">
                   <input class="filters__control filters__control--switch" type="checkbox" name="country" value="peru">
@@ -227,12 +232,12 @@
           <li class="cards__item">
             <a class="cards__link" href="#">
               <picture>
-                <source type="image/png" media="(min-width:1440px)"
-                  srcset="images/catalog-1-desktop@1x.png, images/catalog-1-desktop@2x.png 2x" width="161" height="172">
-                <source type="image/png" media="(min-width:768px)"
-                  srcset="images/catalog-1-tablet@1x.png, images/catalog-1-tablet@2x.png 2x" width="161" height="172">
-                <img class="cards__link-img" src="images/catalog-1-mobile@1x.png"
-                  srcset="images/catalog-1-mobile@2x.png 2x" width="68" height="86" alt="Кофе">
+                <source type="image/png" media="(min-width:1440px)" width="130" height="188"
+                  srcset="images/item-photo-1@1x.png 1x, images/item-photo-1@2x.png 2x">
+                <source type="image/png" media="(min-width: 768px)" width="130" height="188"
+                  srcset="images/item-photo-1@1x.png 1x, images/item-photo-1@2x.png 2x">
+                <img class="product-page__image" src="images/item-photo-1@2x.png" width="130" height="188"
+                  alt="Банка кофе «Декаф Флэт Уайт»">
               </picture>
             </a>
             <div class="cards__info">
@@ -253,6 +258,151 @@
               </svg>
             </div>
           </li>
+          <li class="cards__item">
+            <a class="cards__link" href="#">
+              <picture>
+                <source type="image/png" media="(min-width:1440px)" width="130" height="188"
+                  srcset="images/item-photo-2@1x.png 1x, images/item-photo-2@2x.png 2x">
+                <source type="image/png" media="(min-width: 768px)" width="130" height="188"
+                  srcset="images/item-photo-2@1x.png 1x, images/item-photo-2@2x.png 2x">
+                <img class="product-page__image" src="images/item-photo-2@2x.png" width="130" height="188"
+                  alt="Банка кофе «Декаф Флэт Уайт»">
+              </picture>
+            </a>
+            <div class="cards__info">
+              <h3 class="cards__item-title">
+                <a class="cards__item-link" href="#">Декаф Флэт Уайт</a>
+              </h3>
+            </div>
+            <div class="cards__description">
+              <p class="cards__item-text">Кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком</p>
+            </div>
+            <div class="cards__bottom">
+              <span class="cards__price">225 ₽</span>
+              <button class="button button--primary cards__button" type="button"
+                aria-label="Добавить Декаф Флэт Уайт в корзину">В корзину</button>
+              <svg class="cards__button-icon" width="20" height="16" aria-hidden="true" focusable="false">
+                <!-- Сюда добавишь содержимое SVG из макета -->
+              </svg>
+            </div>
+          </li>
+          <li class="cards__item">
+            <a class="cards__link" href="#">
+              <picture>
+                <source type="image/png" media="(min-width:1440px)" width="130" height="188"
+                  srcset="images/item-photo-3@1x.png 1x, images/item-photo-3@2x.png 2x">
+                <source type="image/png" media="(min-width: 768px)" width="130" height="188"
+                  srcset="images/item-photo-3@1x.png 1x, images/item-photo-3@2x.png 2x">
+                <img class="product-page__image" src="images/item-photo-3@2x.png" width="130" height="188"
+                  alt="Банка кофе «Декаф Флэт Уайт»">
+              </picture>
+            </a>
+            <div class="cards__info">
+              <h3 class="cards__item-title">
+                <a class="cards__item-link" href="#">Декаф Флэт Уайт</a>
+              </h3>
+            </div>
+            <div class="cards__description">
+              <p class="cards__item-text">Кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком</p>
+            </div>
+            <div class="cards__bottom">
+              <span class="cards__price">225 ₽</span>
+              <button class="button button--primary cards__button" type="button"
+                aria-label="Добавить Декаф Флэт Уайт в корзину">В корзину</button>
+              <svg class="cards__button-icon" width="20" height="16" aria-hidden="true" focusable="false">
+                <!-- Сюда добавишь содержимое SVG из макета -->
+              </svg>
+            </div>
+          </li>
+          <li class="cards__item">
+            <a class="cards__link" href="#">
+              <picture>
+                <source type="image/png" media="(min-width:1440px)" width="130" height="188"
+                  srcset="images/item-photo-4@1x.png 1x, images/item-photo-4@2x.png 2x">
+                <source type="image/png" media="(min-width: 768px)" width="130" height="188"
+                  srcset="images/item-photo-4@1x.png 1x, images/item-photo-4@2x.png 2x">
+                <img class="product-page__image" src="images/item-photo-4@2x.png" width="130" height="188"
+                  alt="Банка кофе «Декаф Флэт Уайт»">
+              </picture>
+            </a>
+            <div class="cards__info">
+              <h3 class="cards__item-title">
+                <a class="cards__item-link" href="#">Декаф Флэт Уайт</a>
+              </h3>
+            </div>
+            <div class="cards__description">
+              <p class="cards__item-text">Кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком</p>
+            </div>
+            <div class="cards__bottom">
+              <span class="cards__price">225 ₽</span>
+              <button class="button button--primary cards__button" type="button"
+                aria-label="Добавить Декаф Флэт Уайт в корзину">В корзину</button>
+              <svg class="cards__button-icon" width="20" height="16" aria-hidden="true" focusable="false">
+                <!-- Сюда добавишь содержимое SVG из макета -->
+              </svg>
+            </div>
+          </li>
+          <li class="cards__item">
+            <a class="cards__link" href="#">
+              <picture>
+                <source type="image/png" media="(min-width:1440px)" width="130" height="188"
+                  srcset="images/item-photo-5@1x.png 1x, images/item-photo-5@2x.png 2x">
+                <source type="image/png" media="(min-width: 768px)" width="130" height="188"
+                  srcset="images/item-photo-5@1x.png 1x, images/item-photo-5@2x.png 2x">
+                <img class="product-page__image" src="images/item-photo-5@2x.png" width="130" height="188"
+                  alt="Банка кофе «Декаф Флэт Уайт»">
+              </picture>
+            </a>
+          <div class="cards__info">
+            <h3 class="cards__item-title">
+              <a class="cards__item-link" href="#">Декаф Флэт Уайт</a>
+            </h3>
+          </div>
+          <div class="cards__description">
+            <p class="cards__item-text">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
+          </div>
+          <div class="cards__bottom">
+            <span class="cards__price">225 ₽</span>
+            <button class="button button--primary cards__button" type="button"
+              aria-label="Добавить Декаф Флэт Уайт в корзину">В корзину</button>
+            <svg class="cards__button-icon" width="20" height="16" aria-hidden="true" focusable="false">
+              <!-- Сюда добавишь содержимое SVG из макета -->
+            </svg>
+          </div>
+          </li>
+          <li class="cards__item">
+            <a class="cards__link" href="#">
+              <picture>
+                <source type="image/png" media="(min-width:1440px)" width="130" height="188"
+                  srcset="images/item-photo-6@1x.png 1x, images/item-photo-6@2x.png 2x">
+                <source type="image/png" media="(min-width: 768px)" width="130" height="188"
+                  srcset="images/item-photo-6@1x.png 1x, images/item-photo-6@2x.png 2x">
+                <img class="product-page__image" src="images/item-photo-6@2x.png" width="130" height="188"
+                  alt="Банка кофе «Декаф Флэт Уайт»">
+              </picture>
+            </a>
+          <div class="cards__info">
+            <h3 class="cards__item-title">
+              <a class="cards__item-link" href="#">Декаф Флэт Уайт</a>
+            </h3>
+          </div>
+          <div class="cards__description">
+            <p class="cards__item-text">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
+          </div>
+          <div class="cards__bottom">
+            <span class="cards__price">225 ₽</span>
+            <button class="button button--primary cards__button" type="button"
+              aria-label="Добавить Декаф Флэт Уайт в корзину">В корзину</button>
+            <svg class="cards__button-icon" width="20" height="16" aria-hidden="true" focusable="false">
+              <!-- Сюда добавишь содержимое SVG из макета -->
+            </svg>
+          </div>
+          </li>
         </ul>
         <nav class="pagination" aria-label="Страницы каталога">
           <ul class="pagination__list">
@@ -267,15 +417,12 @@
                 1
               </a>
             </li>
-
             <li class="pagination__item">
               <a class="pagination__item-link" href="#">2</a>
             </li>
-
             <li class="pagination__item">
               <a class="pagination__item-link" href="#">3</a>
             </li>
-
             <li class="pagination__item">
               <button class="pagination__button pagination__button--right" type="button">
                 <span class="visually-hidden">Следующая страница</span>
@@ -337,7 +484,6 @@
           </li>
         </ul>
       </div>
-
       <div class="footer__nav">
         <h3 class="footer__title">Интернет-магазин</h3>
         <ul class="footer__list">
@@ -347,18 +493,14 @@
           <li class="footer__item"><a class="footer__link" href="#">О нас</a></li>
         </ul>
       </div>
-
       <div class="footer__nav">
         <h3 class="footer__title">Медиа</h3>
         <ul class="footer__list">
           <li class="footer__item"><a class="footer__link" href="#">Блог</a></li>
           <li class="footer__item"><a class="footer__link" href="#">Информация для СМИ</a></li>
           <li class="footer__item"><a class="footer__link" href="#">Правовая информация</a></li>
-
-
         </ul>
       </div>
-
       <div class="footer__contacts">
         <h3 class="footer__title">Контакты</h3>
         <address class="footer__address">Санкт-Петербург, набережная реки Карповки, дом 5</address>
