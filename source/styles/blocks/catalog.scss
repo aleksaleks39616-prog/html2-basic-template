@@ -1,0 +1,55 @@
+.catalog {
+  background-color: #F8F8F8;
+}
+
+
+
+.catalog__label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #7859CF;
+  text-align: center;
+}
+
+.catalog__title {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  font-size: 24px;
+  color: #333;
+}
+
+
+.cards__item-text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.cards__price {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  font-size: 20px;
+  color: #333;
+}
+
+.cards__button {
+  background-color: #7859CF;
+  border-radius: 4px;
+  padding: 8px 20px;
+  color:#FFF;
+  width: 141px;
+   
+
+  }

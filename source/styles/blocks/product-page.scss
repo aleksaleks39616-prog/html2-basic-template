@@ -1,3 +1,9 @@
+.product-page {
+  background-color: #F3EBE1;
+
+}
+
+
 .product-page__label {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -41,7 +47,6 @@
 }
 
 .product-page__price-new {
-
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -49,5 +54,14 @@
   line-height: 32px;
   color: #333;
 
+}
+
+.product-page__button {
+  background-color: #7859CF;
+  border-radius: 4px;
+  color: #FFF;
+  width: 113.0px;
+  height: 40.0px;
+  padding: 8px 20px;
 
 }

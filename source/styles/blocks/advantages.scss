@@ -1,5 +1,46 @@
+.advantages__label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: #7859CF;
+  text-align: center;
+  font-weight: 700;
+  line-height: 16px;
+}
+
 .advantages__title {
-font-family: "Montserrat",sans-serif;
- 
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  font-weight: 700;
+  line-height: 36px;
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.advantages__list {
+  list-style: none;
+}
+
+.advantages__item-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+  color: #333;
+}
+
+.advantages__item-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #333;
+  width: 280px;
 
 }
