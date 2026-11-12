@@ -2,8 +2,6 @@
   background-color: #F8F8F8;
 }
 
-
-
 .catalog__label {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
@@ -48,8 +46,21 @@
   background-color: #7859CF;
   border-radius: 4px;
   padding: 8px 20px;
-  color:#FFF;
+  color: #FFF;
   width: 141px;
-   
+}
 
+@media (min-width: $tablet-width) {
+
+  .catalog__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 42px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    color: #333;
   }
+
+
+}

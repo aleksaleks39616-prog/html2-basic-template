@@ -1,0 +1,24 @@
+.pagination__list {
+  list-style: none;
+}
+
+
+.pagination__item-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  color: #7859CF;
+  text-decoration: none;
+}
+
+
+.pagination__item-link--current {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  color: #333;
+}

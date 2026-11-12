@@ -32,3 +32,29 @@
   text-decoration: none;
   list-style: none;
 }
+
+@media (min-width: $tablet-width) {
+
+  .cards__item-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .cards__item-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333;
+  }
+
+
+
+
+}
