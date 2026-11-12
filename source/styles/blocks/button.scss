@@ -5,3 +5,39 @@
   font-family: inherit;
   box-sizing: border-box;
 }
+
+.button__product-page {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  min-width: 113px;
+  min-height: 40px;
+  padding: 8px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 10px;
+  overflow-wrap: break-word;
+}
+
+.button__cards {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 141px;
+  min-height: 36px;
+  padding: 8px 20px;
+  min-height: 36px;
+  color: #FFF
+}
+
+.button__cards::before {
+  content: "";
+  flex-shrink: 0;
+  width: 20px;
+  height: 16px;
+  background-color: currentColor;
+  -webkit-mask: url("../../icons/union.svg") no-repeat center / contain;
+  mask: url("../../icons/union.svg") no-repeat center / contain;
+}
