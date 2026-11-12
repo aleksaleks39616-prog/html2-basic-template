@@ -1,0 +1,16 @@
+ .icon-button {
+   display: block;
+   width: 16px;
+   height: 16px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+ }
+
+ .icon-button--user {
+   background-image: url("../../icons/user.svg");
+ }
+
+ .icon-button--cart {
+   background-image: url("../../icons/cart.svg");
+ }

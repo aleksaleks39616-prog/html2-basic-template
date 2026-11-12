@@ -12,7 +12,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="container main-header__container">
+    <div class="container main-header__wrapper">
       <a class="main-header__logo logo" href="#">
         <picture>
           <source type="image/svg+xml" media="(min-width:1440px)" width="170" height="36"
@@ -54,7 +54,7 @@
       <div class="container product-page__container">
         <div class="product-page__gallery">
 
-          <button class="product-page__arrow product-page__arrow--prev" type="button">
+          <button class="product-page__arrow product-page__arrow--prev button" type="button">
             <span class="visually-hidden">Предыдущий слайд</span>
           </button>
           <picture class="product-view__image">
@@ -65,7 +65,7 @@
             <img class="product-page__image" src="images/hero-image-mobile@2x.png" width="280" height="280"
               alt="Банка кофе «Декаф Флэт Уайт»">
           </picture>
-          <button class="product-page__arrow product-page__arrow--next" type="button">
+          <button class="product-page__arrow product-page__arrow--next button" type="button">
             <span class="visually-hidden">Следующий слайд</span>
           </button>
         </div>
@@ -76,11 +76,13 @@
             Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком —
             то, что нужно для расслабления после тяжёлого рабочего дня
           </p>
+          <div class="product-page__wrapper">
           <p class="product-page__price">
             <del class="product-page__price-old">295₽</del>
             <span class="product-page__price-new">225₽</span>
           </p>
-          <a class="button product-page__button">Заказать</a>
+          <button class="button product-page__button" type="button">Заказать</button>
+          </div>
         </div>
       </div>
     </section>
@@ -89,19 +91,19 @@
         <p class="advantages__label">Преимущества</p>
         <h2 class="advantages__title">Главные причины выбрать Drink2Go</h2>
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--speed">
             <h3 class="advantages__item-title">Скорость</h3>
             <p class="advantages__item-text">Готовый напиток всегда под рукой — просто открой банку</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--comfort">
             <h3 class="advantages__item-title">Удобство</h3>
             <p class="advantages__item-text">Легко помещается и в карман, и в маленькую сумочку</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--fresh">
             <h3 class="advantages__item-title">Бодрость</h3>
             <p class="advantages__item-text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--ecology">
             <h3 class="advantages__item-title">Экологичность</h3>
             <p class="advantages__item-text">Вся упаковка сделана из перерабатываемых материалов</p>
           </li>

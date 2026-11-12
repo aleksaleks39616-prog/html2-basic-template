@@ -1,9 +1,14 @@
+
+.navigation {
+  display: none;
+}
+
+
 .navigation__list {
   list-style: none;
 }
 
 .navigation__link {
-  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -11,6 +16,10 @@
   text-decoration: none;
   color:  #333;
 
-
 }
 
+@media (min-width: 768px) {
+  .navigation {
+    display: block;
+  }
+}

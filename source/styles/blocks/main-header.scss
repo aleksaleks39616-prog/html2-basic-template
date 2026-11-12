@@ -1,1 +1,10 @@
-
+.main-header__burger {
+  background-image: url("../../icons/burger.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #FFF;
+  border: none;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}

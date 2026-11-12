@@ -1,30 +1,63 @@
 .advantages__label {
-  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   color: #7859CF;
   text-align: center;
   font-weight: 700;
   line-height: 16px;
+  margin: 0;
 }
 
 .advantages__title {
-  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   color: #333;
   text-align: center;
   font-weight: 700;
   line-height: 36px;
   width: 280px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 0;
 }
 
 .advantages__list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
 }
 
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages__item::before {
+  content: "";
+  margin-bottom: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 50px;
+  height: 56px;
+}
+
+.advantages__item--speed::before {
+  background-image: url("../../icons/speed.svg");
+}
+
+.advantages__item--comfort::before {
+  background-image: url("../../icons/comfort.svg");
+
+}
+
+.advantages__item--fresh::before {
+  background-image: url("../../icons/fresh.svg");
+}
+
+.advantages__item--ecology::before {
+  background-image: url("../../icons/ecology.svg");
+}
+
+
 .advantages__item-title {
-  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -34,33 +67,29 @@
 }
 
 .advantages__item-text {
-  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   text-align: center;
   color: #333;
-  width: 280px;
+  max-width: 280px;
 
 }
-
 
 @media (min-width: $tablet-width) {
 
   .advantages__title {
-    font-family: "Montserrat", sans-serif;
     font-size: 42px;
     font-style: normal;
     font-weight: 700;
     line-height: 64px;
     text-align: center;
     min-height: 128px;
-    width: 728px;
+    max-width: 728px;
   }
 
   .advantages__item-title {
-    font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -70,27 +99,25 @@
   }
 
   .advantages__item-text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center;
-  color: #333;
-  width: 267px;
-  align-items: center;
-}
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #333;
+    width: 267px;
+    align-items: center;
+  }
 }
 
 @media (min-width: $desktop-width) {
-   .advantages__title {
-    font-family: "Montserrat", sans-serif;
+  .advantages__title {
     font-weight: 700;
     font-size: 42px;
     line-height: 54px;
     color: #333;
     text-align: center;
-    width:1360px;
+    width: 1360px;
   }
 
 }

@@ -5,7 +5,6 @@
 
 
 .product-page__label {
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
@@ -16,7 +15,6 @@
 }
 
 .product-page__title {
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 48px;
@@ -27,7 +25,6 @@
 }
 
 .product-page__description {
-  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -39,7 +36,6 @@
 }
 
 .product-page__price-old {
-  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -47,7 +43,6 @@
 }
 
 .product-page__price-new {
-  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -57,18 +52,58 @@
 }
 
 .product-page__button {
-  background-color: #7859CF;
-  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: #FFF;
-  width: 113.0px;
-  height: 40.0px;
+  min-width: 113px;
+  min-height: 40px;
   padding: 8px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 10px;
+  overflow-wrap: break-word;
+}
+
+.product-page__gallery {
+  position: relative;
+}
+
+
+.product-page__arrow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  top: 285px;
+}
+
+
+.product-page__arrow--prev {
+
+  background-image: url("../../icons/arrow-prev.svg");
+}
+
+.product-page__arrow--next {
+  right: 4px;
+  background-image: url("../../icons/arrow-next.svg");
 
 }
 
+.product-page__wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+
+
 @media (min-width: $tablet-width) {
   .product-page__title {
-    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 56px;
     line-height: 80px;
@@ -77,7 +112,6 @@
   }
 
   .product-page__description {
-    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
@@ -91,7 +125,6 @@
 
 @media (min-width: $desktop-width) {
   .product-page__title {
-    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 56px;
     line-height: 80px;
