@@ -76,21 +76,27 @@
     text-align: center;
   }
 
-.product-page__description {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  color: #333;
-  text-align: center;
-  width: 608px;
-  min-height: 96px;
+  .product-page__description {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #333;
+    text-align: center;
+    width: 608px;
+    min-height: 96px;
 
+  }
 }
 
-
-
-
-
+@media (min-width: $desktop-width) {
+  .product-page__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 80px;
+    color: #333;
+    text-align: center;
+  }
 
 }
