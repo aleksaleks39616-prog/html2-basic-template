@@ -1,7 +1,6 @@
 .button {
   border: none;
   background-color: #7859CF;
-  border-radius: 4px;
   font-family: inherit;
   box-sizing: border-box;
 }
@@ -29,7 +28,7 @@
   min-height: 36px;
   padding: 8px 20px;
   min-height: 36px;
-  color: #FFF
+  color: #FFF;
 }
 
 .button__cards::before {
@@ -41,3 +40,5 @@
   -webkit-mask: url("../../icons/union.svg") no-repeat center / contain;
   mask: url("../../icons/union.svg") no-repeat center / contain;
 }
+
+

@@ -1,0 +1,32 @@
+.social__list {
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social__item {
+  display: flex;
+}
+
+.social__link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.social__link--vkontakte {
+  background-image: url("../../icons/vk.svg");
+}
+
+.social__link--pinterest {
+  background-image: url("../../icons/pinterest.svg");
+}
+
+.social__link--ok {
+  background-image: url("../../icons/ok.svg");
+}

@@ -1,3 +1,7 @@
+.main-header {
+  padding: 12px 0;
+}
+
 .main-header__burger {
   background-image: url("../../icons/burger.svg");
   background-repeat: no-repeat;
@@ -7,4 +11,18 @@
   width: 16px;
   height: 16px;
   cursor: pointer;
+}
+
+
+.main-header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.main-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
 }

@@ -10,6 +10,11 @@
 .footer__list {
   list-style: none;
   text-decoration: none;
+  padding-left: 0;
+}
+
+.footer__item {
+  margin-top: 12px;
 }
 
 .footer__link {
@@ -20,10 +25,20 @@
   text-transform: uppercase;
   color: #333;
   text-decoration: none;
+  display: inline-block;
 }
 
+.footer__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
 
 .footer__address {
+  position: relative;
+  margin: 0 0 8px;
+  padding-left: 28px;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -31,13 +46,42 @@
   color: #333;
 }
 
+.footer__address::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("../../icons/address.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 .footer__phone {
+  position: relative;
+  display: inline-block;
+  padding-left: 28px;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   color: #333;
   text-decoration: none;
+}
+
+.footer__phone::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("../../icons/phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .footer__create-link {

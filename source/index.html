@@ -382,24 +382,21 @@
         <nav class="pagination" aria-label="Страницы каталога">
           <ul class="pagination__list">
             <li class="pagination__item">
-              <button class="pagination__button pagination__button--left" type="button">
+              <button class="button pagination__button pagination__button--left" type="button">
                 <span class="visually-hidden">Предыдущая страница</span>
               </button>
             </li>
-
             <li class="pagination__item">
-              <a class="pagination__item-link" href="#" aria-current="page">
-                1
-              </a>
+              <a class="pagination__item-link" href="#">1</a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__item-link pagination__item-link--current" href="#">2</a>
+              <a class="pagination__item-link pagination__item-link--current" href="#" aria-current="page">2</a>
             </li>
             <li class="pagination__item">
               <a class="pagination__item-link" href="#">3</a>
             </li>
             <li class="pagination__item">
-              <button class="pagination__button pagination__button--right" type="button">
+              <button class="button pagination__button pagination__button--right" type="button">
                 <span class="visually-hidden">Следующая страница</span>
               </button>
             </li>
@@ -418,35 +415,37 @@
       </picture>
     </div>
   </main>
-  <footer class="footer container">
-    <div class="footer-wrapper">
-      <a class="footer__logo" href="#">
-        <picture>
-          <source type="image/svg+xml" media="(min-width:1440px)" width="170" height="36"
-            srcset="images/footer-logo-tablet.svg">
-          <source type="image/svg+xml" media="(min-width: 768px)" width="170" height="36"
-            srcset="images/footer-logo-tablet.svg">
-          <img class="logo__image" src="images/footer-logo-mobile.svg" width="82" height="36" alt="Drink2Go">
-        </picture>
-      </a>
-      <div class="social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--pinterest" href="#">
-              <span class="visually-hidden">Пинтерест</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--ok" href="#">
-              <span class="visually-hidden">Одноклассники</span>
-            </a>
-          </li>
-        </ul>
+  <footer class="footer">
+    <div class=" container footer-wrapper">
+      <div class="footer__top">
+        <a class="footer__logo" href="#">
+          <picture>
+            <source type="image/svg+xml" media="(min-width:1440px)" width="170" height="36"
+              srcset="images/footer-logo-desktop.svg">
+            <source type="image/svg+xml" media="(min-width: 768px)" width="170" height="36"
+              srcset="images/footer-logo-tablet.svg">
+            <img class="footer__logo-img" src="images/footer-logo-mobile.svg" width="82" height="36" alt="Drink2Go">
+          </picture>
+        </a>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--pinterest" href="#">
+                <span class="visually-hidden">Пинтерест</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--ok" href="#">
+                <span class="visually-hidden">Одноклассники</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="footer__nav">
         <h3 class="footer__title">Интернет-магазин</h3>
