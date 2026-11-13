@@ -26,3 +26,18 @@
   align-items: center;
   gap: 22px;
 }
+
+@media (min-width: $tablet-width) {
+
+  .main-header__burger {
+    display: none;
+  }
+
+  .main-header__navigation {
+    order: 1;
+  }
+
+  .main-header__actions {
+    order: 2;
+  }
+}
