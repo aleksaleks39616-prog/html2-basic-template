@@ -55,3 +55,9 @@
   background: none;
   border: none;
 }
+
+@media (min-width: $tablet-width) {
+  .range {
+    max-width: 223px;
+  }
+}

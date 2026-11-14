@@ -24,7 +24,6 @@
 }
 
 .filters__submit {
-  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -33,18 +32,15 @@
   background: #7859CF;
   color: #FFF;
   width: 280px;
-
 }
 
 .filters__reset {
-  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #7859CF;
   background-color: #FFF;
   width: 280px;
-
 }
 
 .filters__group {
@@ -167,4 +163,41 @@
 
 .filters__control--switch:disabled~.filters__option-text {
   color: #BDBDBD;
+}
+
+@media (min-width: $tablet-width) {
+
+  .filters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+    align-items: start;
+
+  }
+
+  .filters__buttons {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .filters__submit {
+    width: 137px;
+  }
+
+  .filters__reset {
+    width: 120px;
+    min-height: 40px;
+  }
+
+  .filters__legend {
+    white-space: nowrap;
+  }
+
+
 }
