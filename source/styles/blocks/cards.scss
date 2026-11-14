@@ -12,8 +12,11 @@
   padding-left: 0;
 }
 
+.cards__sorting {
+  padding-top: 40px;
+}
+
 .cards__sorting-text {
-  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -22,7 +25,6 @@
 }
 
 .cards__sorting-select {
-  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -30,6 +32,8 @@
   color: #7859CF;
   text-align: right;
   background-color: #F8F8F8;
+  border: none;
+
 
 }
 
@@ -106,7 +110,13 @@
     color: #333;
   }
 
+  .cards__sorting {
+    justify-self: end;
+  }
 
+  .cards__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
-
+  }
 }

@@ -23,6 +23,12 @@
   color: #333;
 }
 
+.filters__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .filters__submit {
   font-size: 16px;
   font-weight: 400;
@@ -32,6 +38,7 @@
   background: #7859CF;
   color: #FFF;
   width: 280px;
+
 }
 
 .filters__reset {
@@ -41,6 +48,7 @@
   color: #7859CF;
   background-color: #FFF;
   width: 280px;
+  min-height: 40px;
 }
 
 .filters__group {
